@@ -1,0 +1,1 @@
+This is core backend service for hiring portal

@@ -1,0 +1,326 @@
+{
+  "server": {
+    "protocol": "http",
+    "port": "8094"
+  },
+  "error_mail": {
+    "send_mail_flag": true,
+    "email_template_path": "/opt/futurx/services/Hirest-Service/src/app/views/templates/error_notification.html",
+    "email_id": "futurx@srkay.com"
+  },
+  "log": {
+    "level": "info"
+  },
+  "auth": {
+  "protocol": "https",
+  "host": {
+    "futurx": "futurxlabs.com",
+    "steerhigh": "steerhigh.com",
+    "serenaway": "serenaway.com",
+    "commonviu": "commonviu.com",
+    "hirest": "hirest.net",
+    "srk": "srk.family"
+  },
+  "port": "443",
+  "auth_service_org_name": "app",
+  "auth_service_domain_name": "hirest",
+  "Content-Type": "application/json",
+  "add_user_ldap": "/auth/v1/ldap/add/user",
+  "remove_user_ldap": "/auth/v1/ldap/remove/user"
+},
+  "database": {
+    "protocol": "http",
+    "host": "127.0.0.1",
+    "port": "8080",
+    "default_org_name": "app",
+    "batch_insert": 10
+  },
+  "profile_image": {
+    "protocol": "https",
+    "host": {
+      "futurx": "futurxlabs.com",
+      "steerhigh": "steerhigh.com",
+      "serenaway": "serenaway.com",
+      "commonviu": "commonviu.com",
+      "hirest": "hirest.net",
+      "srk": "srk.family"
+    },
+    "port": "443",
+    "public": "/img",
+    "pic_dest": "/mnt/appdata/img"
+  },
+  "config_helper_module_config": {
+    "port": "80"
+  },
+  "mail_domain_dynamic": {
+    "hirest": {
+      "name": "Team-HC SRK",
+      "cc": "leena.patoliya@scrumstart.net,ekta.kakadia@scrumstart.net",
+      "bcc": "leena.patoliya@scrumstart.net,ekta.kakadia@scrumstart.net"
+    },
+    "srk": {
+      "name": "Team-HC SRK",
+      "cc": "leena.patoliya@scrumstart.net,ekta.kakadia@scrumstart.net",
+      "bcc": "leena.patoliya@scrumstart.net,ekta.kakadia@scrumstart.net"
+    }
+  },
+  "front_end": {
+    "protocol": "https",
+    "host": {
+      "futurx": "futurxlabs.com",
+      "steerhigh": "steerhigh.com",
+      "serenaway": "serenaway.com",
+      "commonviu": "commonviu.com",
+      "hirest": "hirest.net",
+      "srk": "srk.family"
+    },
+    "port": "443",
+    "path": {
+      "futurx": "/steerhigh/html",
+      "steerhigh": "",
+      "serenaway": "",
+      "commonviu": "",
+      "hirest": "",
+      "srk": ""
+    },
+    "login_page": {
+      "futurx": "/login/login.html",
+      "steerhigh": "/login",
+      "serenaway": "/login.html",
+      "commonviu": "/login",
+      "hirest": "/login",
+      "srk": "/login"
+    },
+    "signup_page": {
+      "futurx": "/register/resource-registration.html",
+      "steerhigh": "/resource-registration.html",
+      "serenaway": "/resource-registration.html",
+      "commonviu": "/register",
+      "hirest": "/register",
+      "srk": "/register"
+    },
+    "pwd_reset_page": {
+      "futurx": "/Forgotpassword/passwordreset.html",
+      "steerhigh": "/reset-password.html",
+      "serenaway": "/passwordreset.html",
+      "commonviu": "/auth/reset-password",
+      "hirest": "/auth/reset-password",
+      "srk": "/auth/reset-password"
+
+    },
+    "resend_email_page": {
+      "futurx": "/register/resendEmail.html",
+      "steerhigh": "/resendEmail.html",
+      "serenaway": "/registrationSuccessful.html",
+      "commonviu": "",
+      "hirest": "",
+      "srk": ""
+    }
+  },
+  "mail_domains": {
+    "protocol": "https",
+    "host": {
+      "futurx": "futurxlabs.com",
+      "steerhigh": "steerhigh.com",
+      "serenaway": "serenaway.com",
+      "commonviu": "commonviu.com",
+      "hirest": "hirest.net",
+      "srk": "srk.family"
+    },
+    "port": "443",
+    "path": "/opt/futurx/services/Hirest-Service/app/views/templates/",
+    "placement_offer_mail": "/opt/futurx/services/Hirest-Service/app/views/templates/hirest/placement_offer.html",
+    "campus_drive_detail_mail": "/opt/futurx/services/Hirest-Service/app/views/templates/hirest",
+    "summary_of_the_assessment": "/opt/futurx/services/Hirest-Service/app/views/templates/hirest/summary_of_the_assessment.html",
+    "joining_instruction": "/opt/futurx/services/Hirest-Service/app/views/templates/hirest",
+    "finalSelectedCandidate": "/opt/futurx/services/Hirest-Service/app/views/templates/hirest/finalSelectedCandidate.html",
+    "resendFinalSelectedCandidate": "/opt/futurx/services/Hirest-Service/app/views/templates/hirest/feedback_Pertaining_to_offer_letter.html",
+    "approveLearningIntimation": "/opt/futurx/services/Hirest-Service/app/views/templates/hirest/learning_intimation.html"
+  },
+  "mail_template": {
+    "root": "/opt/futurx/services/Hirest-Service/app/views/templates/"
+  },
+  "ldap": {
+    "protocol": "ldap",
+    "host": "10.0.4.6",
+    "port": "389",
+    "bind_credentials": "dPANHsJlu3lqRZgrppHt5K4RHbwNFkib"
+  },
+  "security": {
+    "protocol": "http",
+    "host": {
+      "futurx": "127.0.0.1",
+      "steerhigh": "127.0.0.1",
+      "serenaway": "127.0.0.1",
+      "commonviu": "127.0.0.1",
+      "hirest": "127.0.0.1",
+      "srk": "127.0.0.1"
+    },
+    "port": "80"
+  },
+  "survey_service": {
+    "protocol": "https",
+    "host": {
+      "futurx": "futurxlabs.com",
+      "steerhigh": "steerhigh.com",
+      "serenaway": "serenaway.com",
+      "commonviu": "commonviu.com",
+      "hirest": "hirest.net",
+      "srk": "srk.family"
+    },
+    "port": "443",
+    "survey_service_org_name": "futurxlabs"
+  },
+  "report": {
+    "protocol": "https",
+    "host": {
+      "futurx": "futurxlabs.com",
+      "steerhigh": "steerhigh.com",
+      "serenaway": "serenaway.com",
+      "commonviu": "commonviu.com",
+      "hirest": "hirest.net",
+      "srk": "srk.family"
+    },
+    "port": "443",
+    "report_service_org_name": "futurxlabs"
+  },
+  "cache_ms": {
+    "protocol": "http",
+    "host": "127.0.0.1",
+    "port": "80",
+    "add_cache": "cache/addcache/v1",
+    "get_cache": "cache/getcache/v1",
+    "get_multiple_cache": "cache/getMultipleCache/v1"
+  },
+  "crypto": {
+    "encryptUri": "http://127.0.0.1:80/crypto/v1/encrypt",
+    "decryptUri": "http://127.0.0.1:80/crypto/v1/decrypt",
+    "method": "POST"
+  },
+  "mail_domains": {
+    "protocol": "https",
+    "host": {
+      "futurx": "futurxlabs.com",
+      "steerhigh": "steerhigh.com",
+      "serenaway": "serenaway.com",
+      "commonviu": "commonviu.com",
+      "hirest": "hirest.net",
+      "srk": "srk.family"
+    },
+    "port": "443",
+    "path": "/opt/futurx/services/Hirest-Service/app/views/templates/"
+  },
+  "mail_template": {
+    "root": "/opt/futurx/services/Hirest-Service/app/views/templates/"
+  },
+  "security": {
+    "protocol": "http",
+    "host": {
+      "futurx": "127.0.0.1",
+      "steerhigh": "127.0.0.1",
+      "serenaway": "127.0.0.1",
+      "commonviu": "127.0.0.1",
+      "hirest": "127.0.0.1",
+      "srk": "127.0.0.1"
+    },
+    "port": "80"
+  },
+  "shorten_url": {
+    "protocol": "https",
+    "host": {
+      "futurx": "futurxlabs.com",
+      "steerhigh": "steerhigh.com",
+      "serenaway": "serenaway.com",
+      "commonviu": "commonviu.com",
+      "hirest": "hirest.net",
+      "srk": "srk.family"
+    },
+    "port": "443"
+  },
+  "smtp": {
+    "service": "smtp.office365.com",
+    "host": "smtp.office365.com",
+    "port": 587,
+    "startssl": {
+      "enable": true
+    },
+    "secureConnection": false,
+    "auth": {
+      "user": "no-reply@srkay.com",
+      "pass": "4F4@AP2wsysf"
+    }
+  },
+  "smtp_demo": {
+    "service": "smtp.office365.com",
+    "host": "smtp.office365.com",
+    "port": 587,
+    "startssl": {
+      "enable": true
+    },
+    "secureConnection": false,
+    "auth": {
+      "user": "no-reply@srkay.com",
+      "pass": "4F4@AP2wsysf"
+    }
+  },
+  "smtp_srkCareer": {
+    "service": "smtp.office365.com",
+    "host": "smtp.office365.com",
+    "port": 587,
+    "startssl": {
+      "enable": true
+    },
+    "secureConnection": false,
+    "auth": {
+      "user": "no-reply@srkay.com",
+      "pass": "4F4@AP2wsysf"
+    }
+  },
+  "winston_config": {
+    "isConsole": false,
+    "isFile": false,
+    "maxSize": 10000000,
+    "maxFiles": 30,
+    "log_path": "/var/log/futurx/Hirest-Service/",
+    "grayLog_host": "10.0.2.10",
+    "grayLog_port": "12201"
+  },
+  "link_expiry_time": {
+    "futurx": {
+      "unit": "days",
+      "value": 1
+    },
+    "steerhigh": {
+      "unit": "days",
+      "value": 7
+    },
+    "serenaway": {
+      "unit": "days",
+      "value": 1
+    },
+    "commonviu": {
+      "unit": "days",
+      "value": 1
+    },
+    "hirest": {
+      "unit": "days",
+      "value": 1
+    },
+    "srk": {
+      "unit": "days",
+      "value": 1
+    }
+  },
+  "assessment_param_icons":{
+    "average_score_icon":"https://res.cloudinary.com/dwjjdoinf/image/upload/v1514974167/average_score_rqyohq.png"
+  },
+  "cloudinary_account": {
+    "cloud_name":"srkaycg",
+    "api_key": "577516241656231",
+    "api_secret": "PDrUZEuJcj3x1aoK58AzQlm6Eqo",
+    "link": "https://api.cloudinary.com/v1_1/srkaycg/auto/upload"
+  },
+  "_in_bcc_email": {
+    "_in_bcc_email": ""
+  }
+}

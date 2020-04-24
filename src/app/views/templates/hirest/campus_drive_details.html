@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+
+    body,
+    table,
+    td,
+    a {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    table,
+    td {
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+    /* RESET STYLES */
+
+    img {
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+    }
+
+    table {
+      border-collapse: collapse !important;
+    }
+
+    body {
+      height: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+    }
+    /* iOS BLUE LINKS */
+
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+    /* MEDIA QUERIES */
+
+    @media screen and (max-width: 600px) {
+      .mobile-hide {
+        display: none !important;
+      }
+      .mobile-center {
+        text-align: center !important;
+      }
+      .mobile-table {
+        width: 100% !important;
+      }
+    }
+    /* ANDROID CENTER FIX */
+
+    div[style*="margin: 16px 0;"] {
+      margin: 0 !important;
+    }
+  </style>
+</head>
+
+<body style="margin: 0 !important; padding: 0 !important; background-color: #eeeeee;" bgcolor="#eeeeee">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td align="center" style="background-color: #eeeeee;" bgcolor="#eeeeee">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" class="mobile-table">
+          <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+            <td class="content-wrap" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 20px;background-color: #fff;" valign="top">
+
+              <meta itemprop="name" content="Confirm Email" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;" />
+              <table width="100%" cellpadding="0" cellspacing="0" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                  <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
+                    <!-- <span style="float:left;"><img src="https://res.cloudinary.com/srkay/image/upload/v1510912027/ci5dbdayfljxuawecf5n.png" style="display: block; border: 0px;width:20%;height:20%;" /></span><br> -->
+                    <center>
+                      <h1 style=" font-size:250%">Campus Drive Details</h1>
+                    </center>
+                  </td>
+                </tr>
+                <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                  <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
+                    <img src="http://res.cloudinary.com/diavcaptb/image/upload/c_scale,w_480/v1511682955/logo/campus.jpg" style="width:100%;height:45%;"/>
+                  </td>
+                </tr>
+                <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                  <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
+                    <center>
+                    <h2>Job Description</h2>
+                  </center>
+                  </td>
+                </tr>
+                <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                  <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
+                    <b>Campus Type: </b>Post Graduation<br>
+                    <b>Designations Till Probation: </b> Management
+                    {% if designation.split(' ')[2]=='Capital' %}
+                    {{designation.split(' ')[1]+" "+designation.split(' ')[2]}}<br>
+                    {% else %}
+                    {{designation.split(' ')[1]}}<br>
+                    {% endif%}
+
+                    <b>Designations Post Probation: </b> Executive
+                    {% if designation.split(' ')[3]=='Capital' %}
+                    {{designation.split(' ')[2]+" "+designation.split(' ')[3]}}<br>
+                    {% else %}
+                    {{designation.split(' ')[2]}}<br>
+                    {% endif%}
+
+                    <b>CTC Details:</b> {{ctc}}
+                  </td>
+                </tr>
+                <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                  <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
+                    <b><u>Roles & Responsibilities</u></b><br>
+
+                    {% if designation.split(' ')[2]=='Capital' %}
+                    <b>Profile:</b> HR/IR/Admin Related Activities<br>
+                    {% endif %}
+
+                    {% if designation.split(' ')[1]=='Trainee-Marketing' %}
+                    <b>Profile:</b> Grading / Sales/Marketing Related Activities<br>
+                    {% endif %}
+
+                    {% if designation.split(' ')[1]=='Trainee-Finance' %}
+                    <b>Profile:</b> Finance & Accounts Related Activities<br>
+                    {% endif %}
+
+                    <!-- <b>HR Profile: </b>HR/IR/Admin Related Activities<br>
+                    <b>Marketing Profile: </b>Grading / Sales/Marketing Related Activitie<br>
+                    <b>Finance Profile: </b>Finance & Accounts Related Activities <br> -->
+                    <b>Location of Placement: </b>{{location}}<br>
+                    <b>No. of Vacancies: </b>Open
+                  </td>
+                </tr>
+                <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                  <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
+                  <b><u>Qualification & Other Criteria Required</u></b><br>
+                  <b>Educational Qualifications-</b>{{qualification}}</br>
+                  </td>
+                </tr>
+                <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                  <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
+                  <b><u>Other Requirements:-</u></b><br>
+                  <ul>
+                    <li>Possess an intense passion to join the Gems & Jewellery industry</li>
+                    <li>Must be having Strong Fundamentals of Subject</li>
+                    <li>Must be Well Versed with MS Office and Internet.</li>
+                    <li>Must be having Strong English, Hindi & Gujarati Communication Skills (R/W/S).</li>
+                    <li>Responsive, Humble, Reliable, Good Team-Player, Hardworking, Enthusiastic with the ability to perform multiple assignments at the same time.</li>
+                  </ul>
+                  </td>
+                </tr>
+                <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                  <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
+                    <b>Special Note:</b> Please ask all the students to go through the website of our company <a href="www.srk.one">www.srk.one</a>
+                  </td>
+                </tr>
+                <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                  <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
+                  <center><b>Terms and Conditions for Campus Placement</b></center>
+                  </td>
+                </tr>
+                <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                  <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
+                  <ul>
+                    	<li>Shortlisted Candidate has to join the Organization as a Management Trainee</li>
+                      <li>Management Trainee will have to undergone the Fundamental Training of Diamond upto 3 Months followed by the probation period of 3 Months based on the Successful Completion of the Training</li>
+                      <li>Upon the successful Completion of Probation Period, Management Trainee would join the organisation as an Employee with in respective Department/Unit/Location</li>
+                      <li>Extension or dispensation of Probation Period would be on the sole discretion of the Management</li>
+
+                  </ul>
+                  </td>
+                </tr>
+                <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                  <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
+                  <center><b>CAMPUS PLACEMENT PROCESS</b></center>
+                  </td>
+                </tr>
+                <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                  <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
+                  <center><img src="https://res.cloudinary.com/srkay/image/upload/v1511521556/ltkkaue2heewoa7qzayg.png"/></center>
+                  </td>
+                </tr>
+
+                <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                  <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
+                    Thanks & Regards,<br><b>Team-Human Capital</b><br><br><img src="https://res.cloudinary.com/srkay/image/upload/v1510912027/ci5dbdayfljxuawecf5n.png" style="display: block; border: 0px;width:6%;height:15%;margin-left:8%;" width="6%"/>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+    </tr>
+    </table>
+    </td>
+    </tr>
+  </table>
+</body>
+
+</html>

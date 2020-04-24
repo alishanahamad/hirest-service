@@ -1,0 +1,16 @@
+apps:
+  -
+    name: Hirest-Service
+    restart_delay: 100
+    script: server.js
+    autorestart: true
+    env:
+      NODE_ENV: default
+    env_dev:
+      NODE_ENV: dev
+    env_dev2:
+      NODE_ENV: dev2
+    env_qa:
+      NODE_ENV: qa
+    env_production:
+      NODE_ENV: production
