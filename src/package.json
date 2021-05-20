@@ -16,7 +16,7 @@
     "express-session": "^1.14.1",
     "express-xml-bodyparser": "^0.3.0",
     "formidable": "^1.0.17",
-    "html-pdf": "^2.2.0",
+    "html-pdf": "^3.0.1",
     "http-status-codes": "^1.0.6",
     "install": "^0.8.4",
     "joi": "^10.6.0",
