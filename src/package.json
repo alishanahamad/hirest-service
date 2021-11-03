@@ -43,7 +43,7 @@
     "shortid": "^2.2.6",
     "swig-email-templates": "^4.0.0",
     "tinyurl": "^1.1.2",
-    "validator": "^6.1.0",
+    "validator": "^13.7.0",
     "winston": "^2.2.0",
     "winston-daily-rotate-file": "^1.4.2",
     "winston-graylog2": "^0.5.2",
