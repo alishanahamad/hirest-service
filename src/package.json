@@ -2,7 +2,7 @@
   "name": "Hirest-Service",
   "main": "server.js",
   "dependencies": {
-    "async": "^2.1.2",
+    "async": "^2.6.4",
     "body-parser": "^1.15.2",
     "cloudinary": "^1.10.0",
     "collections": "^5.0.5",
